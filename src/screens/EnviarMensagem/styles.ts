@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         borderColor: colors.black,
         borderRadius: 5,
         padding: 10,
-        height: 70
+        height: 60
     },
     imagem: {
         flexDirection: "row",

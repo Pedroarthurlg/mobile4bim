@@ -13,6 +13,16 @@ const styles = StyleSheet.create({
   topicos: {
     flexDirection: "row",
   },
+  topic: {
+    backgroundColor: colors.secondaryLight,
+    margin: 5,
+    flexDirection: "row",
+    borderRadius: 5,
+    padding: 5
+  },
+  item:{
+    backgroundColor: colors.white,
+  },
   img: {
     width: 100,
     height: 100,

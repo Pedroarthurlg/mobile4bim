@@ -132,13 +132,15 @@ export default function EnviarMensagem({ navigation }: ChatTypes) {
                                 <MultiSelect
                                     items={topico}
                                     uniqueKey="id"
-                                    selectText="Selecione os Tópicos "
+                                    searchInputPlaceholderText="Pesquisar"
+                                    selectText="Selecione os Tópicos"
                                     onSelectedItemsChange={(i) => setSelectedTopico(i)}
                                     selectedItems={selectedTopico}
+                                    submitButtonText="Enviar"
                                     selectedItemTextColor={colors.secondary}
                                     tagBorderColor={colors.secondary}
                                     tagTextColor={colors.secondary}
-                                    submitButtonColor={colors.secondary}
+                                    submitButtonColor={colors.secondaryLight}
                                     styleDropdownMenu={styles.selectTopico}
                                     styleInputGroup={styles.selectTopico}
                                 />

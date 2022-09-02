@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     position:'absolute',
     bottom:10,
     right:0,
-    backgroundColor:colors.secondary,
+    backgroundColor:colors.secondaryLight,
     width:50,
     height:50,
     borderRadius:50,
