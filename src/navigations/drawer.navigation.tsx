@@ -1,7 +1,7 @@
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import ChatNavigation from "../navigations/chat.navigation"
-import { ChatScreen, PerfilScreen, MapScreen, SairScreen, QrCodeScreen, CameraScreen, ArquivoScreen } from "../screens";
+import { ChatScreen, PerfilScreen, MapScreen, SairScreen, QrCodeScreen, CameraScreen, ArquivoScreen, VideoAudioScreen } from "../screens";
 import colors from "../styles/colors";
 import { Ionicons, Feather, MaterialCommunityIcons } from "@expo/vector-icons";
 
@@ -92,6 +92,20 @@ export default function DrawerNavigation() {
                     drawerIcon: () => (
                         <MaterialCommunityIcons
                             name="file-account"
+                            size={24}
+                            color={colors.white}
+                        />
+                    ),
+                }}
+            />
+            <Drawer.Screen
+                name="AudioVideo"
+                component={VideoAudioScreen}
+                options={{
+                    drawerLabel: "Audio Video",
+                    drawerIcon: () => (
+                        <MaterialCommunityIcons
+                            name="video"
                             size={24}
                             color={colors.white}
                         />
